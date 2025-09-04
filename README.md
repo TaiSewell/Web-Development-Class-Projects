@@ -12,13 +12,15 @@ module1-html-css/
    ├── site1/
    ├── site2/
    └── site3/
-
-⚠️ Disclaimer
+```
+##⚠️ Disclaimer
 
 The information, names, and content shown in these example websites are fictional and were created solely for educational purposes.
 They should not be interpreted as real businesses, people, or events.
 
-🚀 Purpose
+---
+
+##🚀 Purpose
 
 Practice front-end development skills (HTML, CSS, JavaScript).
 
