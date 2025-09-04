@@ -1,0 +1,107 @@
+/* Character encoding definition */
+@charset "utf-8";
+
+/* Import fonts */
+@import url(../resources/DobkinPlain.ttf);
+
+/*
+    Case 4
+    Tutorial Case
+
+    Style Sheet for Harpe Gaming Site
+    Author: Tai Sewell
+    Date: 09/03/2025
+
+    filename: hg_styles.css
+*/
+
+@font-face {
+    font-family: "dobkin";
+    src: url(../resources/DobkinPlain.woff) format("woff");
+}
+@font-face {
+    font-family: "cac";
+    src: url(../resources/cac_champagne.woff) format("woff");
+}
+
+/* Page background */
+html {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+/* Headings use dobkin */
+h1 {
+    font-family: "dobkin", "cac", sans-serif;
+    color: navy;
+}
+
+/* Body text, articles, and asides use cac */
+p, li, article, aside {
+    font-family: "cac", "dobkin", sans-serif;
+    font-size: x-large;
+    line-height: 1.5;
+}
+
+/* Links */
+a {
+    color: rgb(41, 204, 0);
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+}
+
+/* List styles */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+ol {
+    list-style-type: upper-roman;
+}
+
+/* Semi-transparent background */
+aside {
+    background-color: rgba(96, 96, 97, 0.151);
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+/* Nested selector: <p> containing <em> */
+p em {
+    color: purple;
+    font-weight: bold;
+}
+
+/* Child selector: direct li children of nav */
+nav > li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* ID selector */
+#special {
+    color: orange;
+    font-size: larger;
+}
+
+p::first-letter {
+    font-size: 200%;
+    color: blue;
+    font-weight: bold;
+}
+
+/* Generated content */
+h2::after {
+    content: " ★";
+    color: gold;
+}
+
+/* Spacing (padding + margin) */
+section {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid black;
+}
