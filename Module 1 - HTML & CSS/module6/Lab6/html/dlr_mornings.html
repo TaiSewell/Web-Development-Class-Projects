@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+      New Perspectives on HTML5, CSS3, and Javascript
+      Lab 6 DLR Morning Schedule
+
+      DLR Morning Schedule
+      Author: Tai Sewell
+      Date:  10/13/2025
+
+      Filename:   dlr_mornings.html
+
+   -->
+   
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>DLR Morning Schedule</title>
+   <link href="../css/dlr_reset2.css" rel="stylesheet" />
+   <link href="../css/dlr_styles2.css" rel="stylesheet" />
+   <link rel="stylesheet" href="../css/dlr_columns2.css">       
+   <link rel="stylesheet" href="../css/dlr_tables2.css">
+</head>
+
+<body>
+   <header>
+      <h1>Listener Supported <em>Since</em> 1975</h1>
+      <nav>
+         <a id="navicon" href="#"><img src="../images/dlr_navicon2.png" alt="" /></a>
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Itse 1301</a></li>
+            <li><a href="#">Contact Us</a></li>
+         </ul>
+      </nav>
+   </header>
+   
+   <div id="container">
+   
+      <section id="main"> 
+         <img src="../images/dlr_logo2.png" alt="DLR" />
+         <h2>DLR Morning Schedule</h2>
+         <p>DLR airs listener-supported public radio in Bismarck, North Dakota from 
+            5:00 a.m. to 10:30 p.m. at Itse 1301 ACC<br />You can <a href="#">Listen Live</a> to streaming audio 
+            of our broadcast or download programs from our <a href="#">Podcast</a>. 
+            <br />Please refer below for our current morning schedule.</p>
+         <table class="Programs">
+            <caption>All Times Central</caption>
+            <colgroup>
+               <col class="timeColumn" />
+               <col class="wDayColumns" span="5" />
+               <col class="wEndColumns" span="2" />
+            </colgroup>
+            <thead>
+                  <th>Time</th>
+                  <th>Mon</th>
+                  <th>Tue</th>
+                  <th>Wed</th>
+                  <th>Thu</th>
+                  <th>Fri</th>
+                  <th>Sat</th>
+                  <th>Sun</th>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>5:00 a.m.</td>
+                  <td colspan="5" rowspan="4">Dawn Air</td>
+                  <td rowspan="4">Dawn Air Weekends</td>
+                  <td rowspan="2">Sunday Magazine</td>
+               </tr>
+               <tr>
+                  <td>5:30 a.m.</td>
+               </tr>
+               <tr>
+                  <td>6:00 a.m.</td>
+                  <td rowspan="2">Weekend Reflections</td>
+               </tr>
+               <tr>
+                  <td>6:30 a.m.</td>
+               </tr>
+               <tr>
+                  <td>7:00 a.m.</td>
+                  <td colspan="5">Local News</td>
+                  <td rowspan="2">Weekend Wrap</td>
+                  <td rowspan="2">Radio U</td>
+               </tr>
+               <tr>
+                  <td>7:30 a.m.</td>
+                  <td colspan="5">World News Feed</td>
+               </tr>
+               <tr>
+                  <td>8:00 a.m.</td>
+                  <td colspan="5" rowspan="4">Classical Roots</td>
+                  <td rowspan="3">What Can You Say?</td>
+                  <td rowspan="4">University on the Air</td>
+               </tr>
+               <tr>
+                  <td>8:30 a.m.</td>
+               </tr>
+               <tr>
+                  <td>9:00 a.m.</td>
+               </tr>
+               <tr>
+                  <td>9:30 a.m.</td>
+                  <td rowspan="3">Animal Talk</td>
+               </tr>
+               <tr>
+                  <td>10:00 a.m.</td>
+                  <td colspan="5" rowspan="4">Symphony City</td>
+                  <td>Word Play</td>
+               </tr>
+               <tr>
+                  <td>10:30 a.m.</td>
+                  <td>Brain Stew</td>
+               </tr>
+               <tr>
+                  <td>11:00 a.m.</td>
+                  <td rowspan="3">Opera Live from the East Coast</td>
+                  <td>The Inner Mind</td>
+               </tr>
+               <tr>
+                  <td>11:30 a.m.</td>
+                  <td>Grammar Rules!!</td>
+               </tr>
+               <tr>
+                  <td>12:00 p.m.</td>
+                  <td colspan="5">Book Club</td>
+                  <td>Weekend Wrap</td>
+               </tr>
+            </tbody>
+            <tfoot>
+               <td colspan="8">Support Your Public Radio Station</td>
+            </tfoot>
+         </table>
+
+      </section>
+      
+   </div>
+   
+   <footer>
+      DLR Austin Community College&#183; 4300 Magnolia Lane &#183; Bismarck, ND 58504 &#183; (701) 555 - 5611
+   </footer>
+</body>
+
+</html>

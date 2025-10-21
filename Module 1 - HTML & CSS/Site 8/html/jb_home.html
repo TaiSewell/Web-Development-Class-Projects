@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   <!--
+          New Perspectives on HTML5, CSS3, and Javascript
+          Assignment 5.1 Jersey Buoys
+          
+          Jersey Buoys home page
+          Author: Tai Sewell
+          Date: 10/09/25  
+      
+          Filename: jb_home.html
+         -->
+   
+   <title>Jersey Buoys Surfing School</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/jb_styles.css">
+</head>
+
+<body>
+   <header>
+      <img src="../images/jb_logo.png" alt="Logo">
+      <nav id="Navbar">
+         <button id="navicon" aria-label="Open menu" aria-expanded="false">
+            <img src="../images/jb_navicon.png" alt="Menu icon">
+         </button>
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li id="Classes"><a href="#">Classes</a>
+               <ul id="subclasses">
+                  <li><a href="#">Intro Surfing</a></li>
+                  <li><a href="#">Surfing I</a></li>
+                  <li><a href="#">Surfing II</a></li>
+                  <li><a href="#">Surfing III</a></li>
+                  <li><a href="#">Master Surfing</a></li>
+               </ul>
+            </li>
+            <li id="Camps"><a href="#">Camps</a>
+                <ul id="subcamps">
+                  <li><a href="#">1-Day Grommets</a></li>
+                  <li><a href="#">3-Day Grommets</a></li>
+                  <li><a href="#">5-Day Grommets</a></li>
+                  <li><a href="#">Surfer Weekend</a></li>
+                  <li><a href="#">Men's Retreat</a></li>
+                  <li><a href="#">Adult Excursions</a></li>
+               </ul>
+            </li>
+            <li id="Store"><a href="#">Store</a>
+               <ul id="substore">
+                  <li><a href="#">Gear</a></li>
+                  <li><a href="#">Quiver</a></li>
+                  <li><a href="#">Clothing</a></li>
+                  <li><a href="#">Shopping Cart</a></li>
+                  <li><a href="#">My Account</a></li>
+                  <li><a href="#">Tracking</a></li>
+               </ul>
+            </li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Staff</a></li>
+            <li><a href="#">ITSE 1301</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <article>
+      <h1>Welcome To Jersey Buoys</h1>
+      <p>Come enjoy the excitement of riding the waves along the Jersey Shore with <em>Jersey Buoys</em>.
+         Our nationally-accredited school brings its 22 years of experience in helping you become 
+         the surfer you've dreamed of becoming. <br><br>
+
+         Our classes are tailored to your needs. We provide instruction in basic surfing techniques 
+         and advanced techniques from cutbacks to boosts to hobble-bobbles. Choose a private or 
+         group lesson. Grommets can participate in 1, 3, or 5 half-day courses. We also sponsor 
+         surfing camps with catered meals and lodging. <br><br>
+
+         Whether a Barney or a Gandolf, you are always safe in our waters. Our experienced 
+         instructors are accredited by the National Instructors and Surf Schools Association. 
+         They are fully Red Cross and First Aid certified. In addition to being great teachers, 
+         every instructor has gone through extensive lifeguard training. <br><br> 
+
+         The next big wave is approaching: Catch it with Jersey Buoys. Call to set up an 
+         appointment, grab a board from the quiver and head to the Green Room.
+      </p>
+   </article>
+
+   <article id="slang">
+      <h1>Surfer Slang</h1>
+      <p>
+         <h3>barney</h3>
+         A new and inexperience surfer
+         <br><br>
+         <h3>boost</h3>
+         To take off from a wave into an aerial
+         <br><br>
+         <h3>cutback</h3>
+         To change direction when streaking ahead of the curl
+         <br><br>
+         <h3>gandolf</h3>
+         An experienced wise older surfer
+         <br><br>
+         <h3>green room</h3>
+         The inside of a tube
+         <br><br>
+         <h3>grommet</h3>
+         A very young surfer, a child
+         <br><br>
+         <h3>gurfer</h3>
+         A girl surfer
+         <br><br>
+         <h3>hobble-bobble</h3>
+         An aerial launch while flapping your arms like a bird
+         <br><br>
+         <h3>quiver</h3>
+         A collection of surfboards
+      </p>
+   </article>
+
+  <section class="photo-gallery" aria-label="Photo gallery">
+      <h2>Views</h2>
+
+      <ul class="gallery-grid">
+         <li>
+            <a href="../images/jb_back1.png">
+            <img src="../images/jb_back1.png" alt="Oceanfront bungalow at sunrise" loading="lazy" decoding="async">
+            </a>
+            <p class="caption">View 1</p>
+         </li>
+
+         <li>
+            <a href="../images/jb_back2.png">
+            <img src="../images/jb_back2.png" alt="Beach house with dunes" loading="lazy" decoding="async">
+            </a>
+            <p class="caption">View 2</p>
+         </li>
+
+         <li>
+            <a href="../images/jb_image01.png">
+            <img src="../images/jb_image01.png" alt="Boardwalk cottage" loading="lazy" decoding="async">
+            </a>
+            <p class="caption">View 3</p>
+         </li>
+
+         <li>
+            <a href="../images/jb_image02.png">
+            <img src="../images/jb_image02.png" alt="Boardwalk cottage" loading="lazy" decoding="async">
+            </a>
+            <p class="caption">View 4</p>
+         </li>
+
+         <li>
+            <a href="../images/jb_image03.png">
+            <img src="../images/jb_image03.png" alt="Boardwalk cottage" loading="lazy" decoding="async">
+            </a>
+            <p class="caption">View 5</p>
+         </li>
+
+         <!-- Add more <li> items as needed -->
+      </ul>
+   </section>
+
+   <section class="contact">
+      <p>
+         <h3>Jersey Buoys</h3>
+         Owner: Tony Gallo
+         <br><br>
+         MAILING ADDRESS
+         <br>
+         Itse 1301 Web Design
+         <br>
+         141 Hodad Drive
+         <br>
+         Ocean City, NJ 08226
+         <br><br>
+         Call Us:
+         <a href="tel:(609) 555-7873">(609) 555-7873</a>
+         <br>
+         Email Us:
+         <a href="mailto:gall@example.com/surf?&subject=Mail to Jersey Buoys&body=Inquiry" 
+            target="_blank">
+            gall@example.com/surf 
+         </a>
+         <br>
+         <a href="#" class="social">
+            <img src="../images/twittericon.png" alt="Twitter icon">
+         </a>
+      </p>
+   </section>
+</body>
+
+<footer>
+   <p class="copyright">© 2025 Jersey Buoys Surfing School. All rights reserved.</p>
+</footer>
+</html>
