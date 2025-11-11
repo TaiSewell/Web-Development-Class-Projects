@@ -44,14 +44,6 @@ They should not be interpreted as real businesses, people, or events.
 I created a comprehensive final project website that integrates all the skills learned throughout the course. This project demonstrates my ability to combine HTML, CSS, and JavaScript to build a fully functional, responsive website from scratch.
 
 To access the main page of the website that will be the SewellTai_mylayout.html file.
-### Access Instructions
-
-#### Run locally
-1. Quick open: double-click `SewellTai_mylayout.html` in your browser (OK for static pages).
-2. Preferred (avoid CORS/issues): start a local server
-   - Python: `cd` to project root then `python -m http.server 8000`
-   - Node: `npx http-server -p 8000`
-   - Visit: http://localhost:8000/path/to/SewellTai_mylayout.html
 --- 
 
 ##🚀 Purpose
