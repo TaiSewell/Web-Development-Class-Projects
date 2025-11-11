@@ -1,0 +1,166 @@
+<!--
+    Developer: Tai Sewell
+    File: LearnMore.html
+--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban Euphoria CBD</title>
+  <link rel="stylesheet" href="../css/SewellTai_styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!-- ===== Header/Navigation ===== -->
+<header>
+  <nav>
+    <ul>
+      <li><a href="../html/SewellTai_mylayout.html">Home</a></li>
+      <li><a href="../html/ShopAll.html">Shop All</a></li>
+      <li><a href="../html/LearnMore.html">Learn More</a></li>
+      <li><a href="../html/LinkReferences.html">Link References</a></li>
+    </ul>
+  </nav>
+
+  <img src="../images/UE_Logo.png" alt="Urban Euphoria Logo">
+
+  <div class="right">
+    <input type="text" placeholder="Search">
+    <button title="User Icon"><i class="fa fa-user" aria-hidden="true"></i></button>
+  </div>
+</header>
+
+<main class="learn-page">
+  <!-- Title Box -->
+  <section class="learn-hero">
+    <h1>Learn More</h1>
+  </section>
+
+  <!-- Two-column info grid -->
+  <section class="info-grid">
+    <!-- CBD Card -->
+    <article class="card">
+      <a href="#cbd">
+        <img src="../images/cbd Image.png" alt="CBD oils and hemp leaf">
+      </a>
+
+      <h2>CBD</h2>
+      <p class="note">
+        CBD (Cannabidiol) is a naturally occurring compound found in the hemp plant. 
+        Unlike THC, CBD does not cause a high. Instead, it interacts with the body's 
+        endocannabinoid system a network that helps regulate balance in areas 
+        like mood, stress, sleep, and pain response.
+      </p>
+      <h3>Key Points</h3>
+      <p>
+        <ul class="card-list">
+          <li>Non-psychoactive: CBD won’t get you high.</li>
+          <li>Plant-derived: Extracted from premium hemp plants.</li>
+          <li>Supports balance: Works with your body’s natural systems.</li>
+          <li>Legal in the U.S.: Federally legal under the 2018 Farm Bill when derived from hemp.</li>
+        </ul>
+      </p>
+      <h3>Potential Benefits of CBD</h3>
+      <p>
+        <ul class="card-list">
+          <li>Supports Better Sleep</li>
+          <li>Promotes Calm & Stress Relief</li>
+          <li>Helps With Physical Comfort</li>
+          <li>Supports Mental Well-Being</li>
+          <li>Active & Wellness Support</li>
+        </ul>
+      </p>
+      <h3>Types Of CBD</h3>
+      <p>
+        <ul class="card-list">
+          <li>CBD -- Non-psychoactive, supports mood, stress relief, sleep, and overall wellness.</li>
+          <li>CBG -- Known as the “mother of all cannabinoids.” Supports overall balance and wellness.</li>
+          <li>CBN -- Mildly psychoactive, commonly associated with sleep support.</li>
+          <li>CBC -- Non-psychoactive; supports mood and general wellness.</li>
+        </ul>
+      </p>
+    </article>
+
+    <!-- THC Card -->
+    <article class="card">
+      <a href="#thc">
+        <img src="../images/THC image.png" alt="THC leaf graphic">
+      </a>
+      <h2>THC</h2>
+      <p class="note">
+        THC (Tetrahydrocannabinol) is a naturally occurring compound found in the cannabis plant.
+        It is most known for producing the plant’s psychoactive effects meaning it can create a 
+        euphoric or uplifting experience.
+        THC interacts with the body's endocannabinoid system, particularly the CB1 receptors 
+        in the brain, which influence mood, perception, appetite, and relaxation.
+      </p>
+      <h3>Key Points</h3>
+      <p>
+        <ul class="card-list">
+          <li>Psychoactive — can produce euphoria and changes in perception</li>
+          <li>Derived from hemp or cannabis plants</li>
+          <li>Works with CB1 receptors in the brain</li>
+          <li>Hemp-derived THC (Δ8, Δ9, etc.) is legal ≤0.3% Delta-9 THC by federal law</li>
+        </ul>
+      </p>
+      <h3>Potential Benefits of THC</h3>
+      <p>
+        <ul class="card-list">
+          <li>Promoting deep relaxation and stress relief</li>
+          <li>Enhancing mood & providing a euphoric experience</li>
+          <li>Easing physical tension & discomfort</li>
+          <li>Stimulating appetite</li>
+          <li>Supporting overall sense of well-being</li>
+        </ul>
+      </p>
+      <h3>Types Of THC</h3>
+      <p>
+        <ul class="card-list">
+          <li>Delta-9 THC -- primary psychoactive cannabinoid</li>
+          <li>Delta-8 THC -- milder, smoother experience</li>
+          <li>THC-A -- converts to THC when heated (flower & concentrates)</li>
+          <li>HHC / minor cannabinoids -- alternative hemp-derived options</li>
+        </ul>
+      </p>
+    </article>
+  </section>
+  <section class="Survey Form">
+    <article>
+      <form id="feedbackForm">
+        <p>How helpful was this section?</p>
+        <br>
+        <input type="radio" id="rate1" name="helpfulness" value="1" required>
+        <label for="rate1">1</label>
+
+        <input type="radio" id="rate2" name="helpfulness" value="2">
+        <label for="rate2">2</label>
+
+        <input type="radio" id="rate3" name="helpfulness" value="3">
+        <label for="rate3">3</label>
+
+        <input type="radio" id="rate4" name="helpfulness" value="4">
+        <label for="rate4">4</label>
+
+        <input type="radio" id="rate5" name="helpfulness" value="5">
+        <label for="rate5">5</label>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <script>
+        const form = document.getElementById("feedbackForm");
+
+        form.addEventListener("submit", function(event) {
+          event.preventDefault();
+
+          const selected = form.elements["helpfulness"].value;
+          alert(`You rated this section: ${selected}/5`);
+          console.log("Rating submitted:", selected);
+        });
+      </script>
+    </article>
+  </section>
+</main>
+<html>
